@@ -22,7 +22,7 @@ class CoreTestCase(unittest.TestCase):
 
     def test_home_page_route(self):
         rv = self.client.get('/')
-        self.assertEquals(rv.status_code, 200)
+        self.assertEquals(rv.status_code, 205)
 
     def test_create_contact_route(self):
         rv = self.client.get('/contact/create')
