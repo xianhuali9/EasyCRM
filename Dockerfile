@@ -8,5 +8,7 @@ RUN pip install -r requirements.txt
 
 RUN python manage.py create_db
 
+EXPOSE 5000
+
 CMD ["python", "run.py"]
 
